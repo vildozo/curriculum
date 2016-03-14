@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Guido Javier Vildozo Mendez">
+		<meta name="keywords" content="Guido,Javier,Vildozo,Mendez">
+		<title>Curriculum Vildozo</title>
+
+	<script type="text/javascript">
+		   function showPersonal() {
+		     var personal = document.getElementById("Personal");
+		     var education = document.getElementById("Education");
+		     var work = document.getElementById("Work");
+		     personal.style.display = "inline";
+		     education.style.display = "none";
+		     work.style.display = "none";
+		   }
+
+		   function showEducation() {
+		     var personal = document.getElementById("Personal");
+		     var education = document.getElementById("Education");
+		     var work = document.getElementById("Work");
+		     personal.style.display = "none";
+		     education.style.display = "inline";
+		     work.style.display = "none";
+		   }
+
+			function showWork() {
+		     var personal = document.getElementById("Personal");
+		     var education = document.getElementById("Education");
+		     var work = document.getElementById("Work");
+		     personal.style.display = "none";
+		     education.style.display = "none";
+		     work.style.display = "inline";
+		   }
+	</script>
+
+	<style type="text/css">
+		#tituloCabecera {
+						font-family: verdana;
+						font-size: 4em;
+						text-align: center;
+						font-style: italic;
+						}
+		#titulo {
+				margin-left: 11%;
+				font-size: 2.5em;
+				font-family: serif;
+				font-weight: bold;
+				}
+		#border {
+				border: 6px solid #7ddbe7;
+				width: 50%;
+				align: center;
+				margin-left: 5%;
+				padding: 1%;
+				border-top-left-radius: 2em;
+				border-top-right-radius: 2em; 
+				background-color: white;
+				display: inline-block;
+				}
+		#borderAncho {
+				border: 6px solid #7ddbe7;
+				width: 80%;
+				align: center;
+				margin-left: 5%;
+				padding: 1%;
+				border-top-left-radius: 2em;
+				border-top-right-radius: 2em; 
+				background-color: white;
+				display: inline-block;
+				}
+		#enlinea{
+				display: inline-block;
+				font-size: 1.5em;
+				width: 30%
+
+				}
+		.foto 	{
+				margin-left: 5%;
+				max-width: 7%;
+				max-height: 12%;			
+				}
+		.negrilla	{
+					font-weight: bold;
+					width: 30%
+					}
+		.texto 	{
+
+				}
+		#nombre {
+				font-size: 1.5em;
+				font-weight: bold;
+				margin-left: 11%;
+				}
+		#menuIzquierda	{
+						line-height:30px;
+					    background-color:rgb(255,210,0);
+					    height:300;
+					    min-width:120px;
+					    width:10%;
+					    float:left;
+					    padding:5px; 
+						}
+
+ 	#menuIzquierda ul {
+		    list-style-type:none;
+		    padding: 0;
+		    margin: 0;
+  			}
+
+  	#menuIzquierda li:hover {
+						    background-color: #555;
+						    border-radius:5px;
+						    animation: mymove 1s 1;
+						  	}
+
+	#efectoLinea:hover {
+    background-color: white;
+    border-radius:5px;
+    animation: iluminador 1s 1;
+  }
+
+
+    @keyframes iluminador {
+    from {background-color: white; }
+    to {background-color: #7ddbe7;}
+}
+
+		@media screen and (max-width: 966px) { 
+			   #titulo{ font-size: 1.5em; }
+			   #enlinea{ display: inline-block;	}
+		}
+
+		
+	</style>
+	
+	</head>
+
+	<body style="background-color: #FCEBB6">
+		<div id="tituloCabecera" >CURRICULUM VITAE</div><br><br><br>
+
+		<nav id="menuIzquierda">
+		  <ul>
+		    <li><a onclick="showPersonal()" href="#Personal">Informaci&oacute;n Personal</a></li>
+		    <li><a onclick="showEducation()" href="#Education">Educaci&oacute;n y Formaci&oacute;n</a></li>
+		    <li><a onclick="showWork()" href="#Work">Experiencia Laboral</a></li>
+		  </ul>
+		</nav>
+
+		<span id="nombre">Guido Javier Vildozo Mendez</span>
+		<br><br>
+		
+		<div id="Personal" style="display: inline;">
+			<div id="border" >
+
+				<div id="titulo">INFORMACI&Oacute;N PERSONAL</div><br>
+								
+
+					<div id="efectoLinea">
+						<div id="enlinea" class="negrilla">Estado Civil:</div>
+						<div id="enlinea">Soltero</div>
+					</div>
+				<br>
+
+					<div id="efectoLinea">
+						<div id="enlinea" class="negrilla">Direcci&oacute;n:</div>
+						<div id="enlinea">Calle Gabriel Lippmann #43</div>
+					</div>
+				<br>
+
+					<div id="efectoLinea">
+						<div id="enlinea" class="negrilla">Telefono:</div>
+						<div id="enlinea">(591)-4-4433736</div>
+					</div>
+				<br>
+
+					<div id="efectoLinea">
+						<div id="enlinea" class="negrilla">Celular:</div>
+						<div id="enlinea">(591)-78302580</div>
+					</div>
+				<br>
+
+					<div id="efectoLinea">
+						<div id="enlinea" class="negrilla">Email:</div>
+						<div id="enlinea">vildozo@outlook.com</div>
+					</div>
+				<br>
+
+					<div id="efectoLinea">
+						<div id="enlinea" class="negrilla">Nacionalidad:</div>
+						<div id="enlinea">Boliviano</div>
+					</div>
+				<br>
+
+					<div id="efectoLinea">
+						<div id="enlinea" class="negrilla">Fecha de Nacimiento:</div>
+						<div id="enlinea">22 de Junio de 1981</div>
+					</div>
+				<br>
+				
+			</div>
+			<img id="enlinea" class="foto" src="Fotos/javo2.jpg" border="8px solid" style="border-color: #FF6600;"/>
+	</div>
+					
+
+<!-- --------------------------------------------------------------------------------------- -->
+
+	<br>
+	<div id="Education"  style="display: none;">
+		<div id="borderAncho" >
+			
+			<div id="titulo">EDUCACI&Oacute;N Y FORMACI&Oacute;N</div><br>
+			
+				<div >
+					<div id="enlinea" class="negrilla" >Fechas</div>
+					<div id="enlinea" class="negrilla" >Instituto Acad&eacute;mico</div>
+					<div id="enlinea" class="negrilla" >Carrera</div>
+					
+				</div>	
+			<br>
+
+				<div id="efectoLinea">
+					<div id="enlinea" >1985-1999</div>
+					<div id="enlinea" ><a href="http://www.ccs.edu.bo/">Colegio Cooperativo Cochabamba</a></div>
+					<div id="enlinea" > </div>
+				</div>	
+			<br>
+
+				<div id="efectoLinea">
+					<div id="enlinea" >1996</div>
+					<div id="enlinea" ><a href="http://www.cochabamba.alianzafrancesa.org.bo/?lang=es">Alianza Francesa</a></div>
+					<div id="enlinea" ></div>
+				</div>
+					
+			<br>
+				
+				<div id="efectoLinea">
+					<div id="enlinea" >2000-2002</div>
+					<div id="enlinea" ><a href="http://www.upb.edu/">Universidad Privada Boliviana</a></div>
+					<div id="enlinea" >Ingenieria Industrial y de Sistemas</div>
+				</div>	
+			<br>
+
+				<div id="efectoLinea">
+					<div id="enlinea">2002</div>
+					<div id="enlinea">CENACO</div>
+					<div id="enlinea">Reparaci&oacute;n y Mantenimiento de PC</div>
+				</div>	
+			<br>
+
+				<div id="efectoLinea">
+					<div id="enlinea">2003</div>
+					<div id="enlinea"><a href="http://www.suffolk.edu">Suffolk University</a></div>
+					<div id="enlinea">Computer Information Systems</div>
+				</div>					
+			<br>
+
+				<div id="efectoLinea">
+					<div id="enlinea">2010-2016</div>
+					<div id="enlinea"><a href="https://www.ucbcba.edu.bo">Universidad Cat&oacute;lica Bolivia</a></div>
+					<div id="enlinea">Ingenieria de Sistemas</div>
+				</div>
+					
+			<br>
+			
+		</div>
+	</div>
+
+
+
+<!-- --------------------------------------------------------------------------------------- -->
+
+	<br>
+	<div id="Work"  style="display: none;">
+		<div id="borderAncho" >
+			
+			<div id="titulo" >EXPERIENCIA LABORAL</div><br>
+			
+			
+				<div >
+					<div id="enlinea" class="negrilla" >Fechas</div>
+					<div id="enlinea" class="negrilla" >Empresa</div>
+					<div id="enlinea" class="negrilla" >Posici&oacute;n</div>
+				</div>
+			<br>
+
+
+
+
+
+				<div id="efectoLinea">
+					<div id="enlinea" >1998-2008</div>
+					<div id="enlinea" >Independiente</div>
+					<div id="enlinea" > Mantenimiento y Reparacion de Ordenadores</div>
+				</div>
+			<br>
+
+				<div id="efectoLinea">
+					<div id="enlinea" >2003</div>
+					<div id="enlinea" >Suffolk University</div>
+					<div id="enlinea" >Executive asistant in Admisions office</div>
+				</div>	
+			<br>
+			<br>
+			
+		</div>
+
+
+		</div>
+
+</body>
+</html>
